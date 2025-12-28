@@ -18,6 +18,10 @@ impl Event {
             payload,
         }
     }
+
+    pub fn get_event(&self) -> EventType {
+        return self.event_type;
+    }
 }
 
 #[cfg(test)]
