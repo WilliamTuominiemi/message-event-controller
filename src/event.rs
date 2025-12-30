@@ -19,7 +19,7 @@ impl Event {
         }
     }
 
-    pub fn get_event(&self) -> EventType {
+    pub fn event_type(&self) -> EventType {
         return self.event_type;
     }
 }
