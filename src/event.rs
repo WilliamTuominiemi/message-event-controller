@@ -22,6 +22,14 @@ impl Event {
     pub fn event_type(&self) -> EventType {
         return self.event_type;
     }
+
+    pub fn timestamp(&self) -> SystemTime {
+        return self.timestamp;
+    }
+
+    pub fn payload(&self) -> String {
+        return self.payload.clone();
+    }
 }
 
 #[cfg(test)]
